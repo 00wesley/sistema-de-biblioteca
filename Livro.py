@@ -4,6 +4,18 @@ class Livro:
     self.__autor = autor
     self.__disponivel = True
 
+  @property
+  def titulo(self):
+    return self.__titulo
+  
+  @property
+  def autor(self):
+    return self.__autor
+  
+  @property
+  def disponivel(self):
+    return self.__disponivel
+
   def emprestar (self):
     if self.__disponivel == True:
       self.__disponivel = False
